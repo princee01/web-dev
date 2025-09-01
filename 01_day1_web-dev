@@ -28,5 +28,137 @@ MAC- physical add of device, permanent add of device.
 ***  whenever we send a request on internet , mac add associated with it
 
 |sender IP|sender MAC|mssg|receiver IP| receiver MAC|
+
 now reply of receiver come to the mac add.
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Port Number
+there are many tabs(yt, insta, coderarmy, browser) open in my chrome
+-->make a request to insta reel
+-->watching video on YT
+-->opend a web on browser
+
+* how computer determine- which data has to be send on which tab.
+here is the concept of port number.
+mow diff port number assign to diff tab,eg insta tab assign a port, yt assign a port
+therefore in mssg-->port number also assigned.
+
+|sender IP|sender MAC|sender port|mssg|receiver IP| receiver MAC|rec port|
+
+*** IP+MAC+PORT
+//-----------------------------------------------------------------------------------------------------------------------------
+
+# IP add format
+
+1. IPv4: 32 bit
+12.34.9.8 -----> 0.0.0.0--->255.255.255.255
+means eaxh place can contain 8 bit number
+2^32 means i can allot 4.3 billion devices a IP add
+
+2. IPv6: 128 bit
+2^128 devices can get a IP add
+
+#MAC add format
+48 bit: hexa
+a device can have many mac add-----how many ways we can transfer data ----eg:using wifi, cable etc
+
+#port number
+16 bit:unsigned int
+65000 approx port numbers avaible
+some reserves port number eg 21-ftp
+                             22-ssh etc
+some of them are registered ranges -1024-49151
+dynamic ranges: 49151-65535
+
+//--------------------------------------------------------------------------------------------------------------------------------------
+# Internet
+there are computers A B C and more----we want to transfer data from one to other----if we connect them through wire it is not reliable
+therefore---we use switch(local connection).
+
+1. Switch: is used in lAN to transfer data from one device to another.short range
+
+                A                          
+                |
+                |
+    B-----------|
+                |
+            |switch|
+                |
+    C ----------|
+                |
+                D
+
+        fig:LAN(local area netwrok)
+
+2. Router: establish connection btw multiple LAN
+connect diff local networks togather
+
+LAN 1 ----------Router1------------Router2-----------LAN 2
+                  |               /
+                  |            /
+                  |         /
+                  |      /
+                Router3
+                  |
+                LAN 3
+
+** these connections btw local network termes as internet.
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+
+type of IP add
+1. private-unique in local within the same LAN multiple device can have same IP
+2. public: unique in global..
+
+*** concept of private ip was in IPv4 bcz of shortage of IP add
+if organization has 500 device , 500ip do not assign,
+we give a unique IP to organization, and if data go outsize the organization , org Ip assigned to that mssg
+
+Router:
+|Router---|----switch----|----WAC(wireless acces control)|
+in ouer home there are always router instead of switch bcz -----wac help devices to connect to cable(switch)---wac physically connect to switch
+
+
+                A                          
+                |
+                |
+    B-----------|
+                |
+           -------------------
+           | |switch|Router| |    ------->single unit
+           -------------------
+                |
+    C ----------|
+                |
+                D
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+what is VPM????
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Web Development
+           request
+client------------------>server
+      <-----------------
+          response
+server returns 3 file--->html,css,js(we already know why these 3 used, so i skipped )
+
+
+# MERN stack
+1. FrontEnd -- html,css,js / React
+2. BackEnd (Authentication)-- NodeJs and Express
+3. DataBase -- MongoDb
+
+
+
+
+
+
+
+
+
+
+
 
