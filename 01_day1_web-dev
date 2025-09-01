@@ -1,0 +1,32 @@
+# Internet working
+
+there are 2 devices A,B , we want to share mssg from A to B.
+A and B has two individual IP add- we have to create a mssg containing sender and reciver IP add and mssg
+then we can send mssg using internet.
+
+* whenever a device connects to internet it provides a IP add,if disconnect it give back from the device
+* every website associated with IP add but human cant remember numbers therefor we use name like abc.com etc
+
+Q1. how any device get IP add?
+ans. it is provided by ISP-Internet service provider-eg BSNL,GIO etc
+* Ip add is dynamic- when we on data our device get a IP and when we off the data it taken back,everytime we will getting new IP.
+* whenever we enter a website name on chrome----->request go to DNS, it revert back the IP address.
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#working of DNS
+When a user types a domain name into a web browser, the DNS resolution process begins. This process involves several steps and different types of DNS servers:
+1.DNS Recursor: This server receives the initial query from the user's device and acts as a middleman, making additional requests to find the IP address.
+2.Root Nameserver: The first step in translating the domain name into an IP address. It directs the query to the appropriate Top-Level Domain (TLD) server.
+3.TLD Nameserver: This server handles the last portion of the domain name (e.g., .com, .org) and directs the query to the authoritative nameserver.
+4.Authoritative Nameserver: The final stop in the DNS query, this server holds the actual DNS records and returns the IP address to the DNS recursor.
+
+case 1- we are using internet and sending mssg to person A and we go offline and Ip add assign to another system 
+        when person A give reply it will go to the new device with that IP add, here data loss take place.
+        here conecpt of MAC(medium access control) add take place
+MAC- physical add of device, permanent add of device.
+***  whenever we send a request on internet , mac add associated with it
+
+|sender IP|sender MAC|mssg|receiver IP| receiver MAC|
+now reply of receiver come to the mac add.
+
